@@ -2,7 +2,7 @@
 1. [Frontend](#frontend)
     1. [Components](#subparagraph1)
 2. [Ruby](#ruby)
-    1. [Sub paragraph](#subparagraph1)
+
 3. [Another paragraph](#paragraph2)
 
 ## Frontend <a name="frontend"></a>
