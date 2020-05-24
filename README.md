@@ -1,7 +1,7 @@
 # Table of contents
 1. [Front end](#frontend)
     1. [HTML](#subparagraph1)
-      1. [Components](#subsubparagraph1)
+    2. [Components](#subsubparagraph1)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph2)
 3. [Another paragraph](#paragraph2)
