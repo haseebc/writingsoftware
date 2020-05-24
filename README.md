@@ -77,5 +77,5 @@ I then styled it as follows
 
 
 
-## Some paragraph <a name="ruby"></a>
+## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
