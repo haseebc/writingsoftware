@@ -1,14 +1,17 @@
 # Table of contents
 1. [Front end](#frontend)
     1. [HTML](#subparagraph1)
+            1. [Components](#subsubparagraph1)
 2. [Some paragraph](#paragraph1)
     1. [Sub paragraph](#subparagraph2)
 3. [Another paragraph](#paragraph2)
 
 ## Front End <a name="frontend"></a>
 Some introduction text, formatted in heading 2 style
-### Sub paragraph <a name="subparagraph1"></a>
+### HTML <a name="subparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
+#### Components <a name="subsubparagraph1"></a>
+This is a sub sub paragraph, formatted in heading 3 style
 
 ## Some paragraph <a name="paragraph1"></a>
 The first paragraph text
