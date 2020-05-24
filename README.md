@@ -12,7 +12,8 @@ Some introduction text, formatted in heading 2 style
 This is a sub paragraph, formatted in heading 3 style
 #### Header <a name="subsubparagraph1"></a>
 This is a sub paragraph, formatted in heading 3 style
-
+##### Footer <a name="subsubsubparagraph1"></a>
+This is a sub paragraph, formatted in heading 3 style
 
 ## Some paragraph <a name="paragraph1"></a>
 The first paragraph text
