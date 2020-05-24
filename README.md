@@ -1,7 +1,7 @@
 # Table of contents
 1. [Frontend](#frontend)
     1. [Components](#subparagraph1)
-2. [Some paragraph](#paragraph1)
+2. [Ruby](#ruby)
     1. [Sub paragraph](#subparagraph1)
 3. [Another paragraph](#paragraph2)
 
@@ -41,12 +41,41 @@ Header
 
   </head>
 ```
+#### Banner <a name="subsubparagraph2"></a>
+I wanted to put an image in my banner so I did this:
+```html
+ <div class="banner" style="background-image: url('images/coding.jpg');"> 
+        <div class="container">
+            <h1>Zodium gives web skills to creative people.</h1>
+            <p>Change your life and learn to code.</p>
+            <a href="#" class="btn-primary">Book now!
+            </a>
+        </div>
 
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
+    </div>
+```
+I then styled it as follows
+```html
+.banner {
+    /* says top bottom 200px, left right 0px */
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center;
+  }
+/* says top bottom 200px, left right  */
+.banner h1 {
+    color: white;
+    font-size: 35px;
+  }
 
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
+.banner p {
+    color: white;
+    font-size: 20px;
+  }
+```
 
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
+
+
+
+## Some paragraph <a name="ruby"></a>
+Basic Ruby concepts.
