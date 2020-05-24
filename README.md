@@ -55,7 +55,7 @@ I wanted to put an image in my banner so I did this:
     </div>
 ```
 I then styled it as follows
-```html
+```css
 .banner {
     /* says top bottom 200px, left right 0px */
     padding: 200px 0;
