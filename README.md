@@ -77,8 +77,8 @@ I then styled it as follows
 Maybe have a generic container that stretches across the screen
 ```css
 .container {
-width: 900px;
-margin: auto;
+    width: 900px;
+    margin: auto;
 }
 ```
 #### Button <a name="subsubparagraph4"></a>
@@ -88,11 +88,10 @@ margin: auto;
 
 ```css
 .btn-primary {
-background-color: #1EDD88;
-color: white;
-padding: 16px 36px;
-border-radius: 50px;
-display: inline-block;
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
 }
 ```
 
