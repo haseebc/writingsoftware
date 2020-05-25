@@ -95,5 +95,38 @@ Maybe have a generic container that stretches across the screen
 }
 ```
 
+#### Card <a name="subsubparagraph5"></a>
+First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
+```css
+.card img {
+  width: 150px;
+}
+```
+Then use inspect to style as below.
+```css
+.card {
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgb(230,230,230);
+  text-align: center;
+  padding: 10px; /* padding to give some internal  */
+  border: 1px solid rgb(230,230,230); /* no horizontal or vertical shift, 5px level of blur and color same color as border  */
+}
+```
+Change the text to make it a bit lighter:
+```css
+.card p {
+  opacity: 0.5;
+}
+```
+#### Cards <a name="subsubparagraph6"></a>
+This is a separate div for a selection of cards.
+Align elements next to each other using flexbox.
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px ;
+}
+
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
