@@ -127,6 +127,15 @@ Align elements next to each other using flexbox.
   justify-content: space-between;
   margin-bottom: 30px ;
 }
-
+#### Footer <a name="subsubparagraph7"></a>
+Got o fontawesome and get the code for each font you want to use, for instance for twitter copy `<i class="fas fa-heart"></i>`.
+First sort out its background-color, padding and text-align.
+```css
+.footer {
+    background-color: #2c2b2b;
+    text-align: center;
+    padding: 60px;
+}  
+```
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
