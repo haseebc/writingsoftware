@@ -73,8 +73,18 @@ I then styled it as follows
     font-size: 20px;
   }
 ```
-
-
+#### Container <a name="subsubparagraph3"></a>
+Maybe have a generic container that stretches across the screen
+```css
+.container {
+width: 900px;
+margin: auto;
+}
+```
+#### Button <a name="subsubparagraph4"></a>
+	
+`padding: 16px 36px;` This means 16px space aove and 36px to the side.
+`display: inline-block;` this is to get space between end of the last line of text and the start of the button. Just looks good.
 
 
 ## Ruby <a name="ruby"></a>
