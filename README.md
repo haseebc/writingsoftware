@@ -86,6 +86,15 @@ margin: auto;
 `padding: 16px 36px;` This means 16px space aove and 36px to the side.
 `display: inline-block;` this is to get space between end of the last line of text and the start of the button. Just looks good.
 
+```css
+.btn-primary {
+background-color: #1EDD88;
+color: white;
+padding: 16px 36px;
+border-radius: 50px;
+display: inline-block;
+}
+```
 
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
