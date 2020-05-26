@@ -1,6 +1,6 @@
 # Table of contents
 1. [Frontend](#frontend)
-    1. [Components](#subparagraph1)
+    1. [Header](#subparagraph1)
 2. [Ruby](#ruby)
 
 3. [Another paragraph](#paragraph2)
@@ -9,9 +9,8 @@
 HTML
 CSS
 JS
-### HTML&CSS Components <a name="subparagraph1"></a>
+### Header <a name="subparagraph1"></a>
 Header
-#### Header <a name="subsubparagraph1"></a>
 ```html
   <head>
      <!-- Responsiveness,one lined below detect width of the device  -->
@@ -41,7 +40,7 @@ Header
 
   </head>
 ```
-#### Banner <a name="subsubparagraph2"></a>
+### Banner <a name="subparagraph2"></a>
 I wanted to put an image in my banner so I did this:
 ```html
  <div class="banner" style="background-image: url('images/coding.jpg');"> 
@@ -73,7 +72,7 @@ I then styled it as follows
     font-size: 20px;
   }
 ```
-#### Container <a name="subsubparagraph3"></a>
+### Container <a name="subparagraph3"></a>
 Maybe have a generic container that stretches across the screen
 ```css
 .container {
@@ -81,7 +80,7 @@ Maybe have a generic container that stretches across the screen
     margin: auto;
 }
 ```
-#### Button <a name="subsubparagraph4"></a>
+### Button <a name="subparagraph4"></a>
 	
 `padding: 16px 36px;` This means 16px space aove and 36px to the side.
 `display: inline-block;` this is to get space between end of the last line of text and the start of the button. Just looks good.
@@ -95,7 +94,7 @@ Maybe have a generic container that stretches across the screen
 }
 ```
 
-#### Card <a name="subsubparagraph5"></a>
+### Card <a name="subparagraph5"></a>
 First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
 ```css
 .card img {
@@ -119,7 +118,7 @@ Change the text to make it a bit lighter:
   opacity: 0.5;
 }
 ```
-#### Cards <a name="subsubparagraph6"></a>
+### Cards <a name="subparagraph6"></a>
 This is a separate div for a selection of cards.
 Align elements next to each other using flexbox.
 .cards {
@@ -127,7 +126,7 @@ Align elements next to each other using flexbox.
   justify-content: space-between;
   margin-bottom: 30px ;
 }
-#### Footer <a name="subsubparagraph7"></a>
+### Footer <a name="subparagraph7"></a>
 Got o fontawesome and get the code for each font you want to use, for instance for twitter copy `<i class="fas fa-heart"></i>`.
 First sort out its background-color, padding and text-align.
 ```css
