@@ -8,7 +8,7 @@
     6. [Cards](#subparagraph6)
     7. [Footer](#subparagraph7)
     8. [Navbar](#subparagraph8)
-    [test](#tester)
+    [test](##tester)
 2. [Ruby](#ruby)
 
 3. [Another paragraph](#paragraph2)
