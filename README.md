@@ -142,5 +142,26 @@ First sort out its background-color, padding and text-align.
     padding: 60px;
 }  
 ```
+### Navbar <a name="subparagraph8"></a>
+Firtly centre the navbar logo, then style it.
+```html
+<div class="navbar_dribble">
+    <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
+</div>
+```
+
+```css
+.navbar_dribble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background: white;
+  box-shadow: 5px 0 10px rgba(0,0,0,0.15);
+} 
+.navbar_dribble img {
+  width: 50px;
+}
+````
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
