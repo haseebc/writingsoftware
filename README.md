@@ -163,6 +163,6 @@ Firtly centre the navbar logo, then style it.
 .navbar_dribble img {
   width: 50px;
 }
-````
+```
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
