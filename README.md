@@ -165,6 +165,17 @@ Firtly centre the navbar logo, then style it.
   width: 50px;
 }
 ```
-#### Test <a name="tester"></a>
+### What is href="#" and why is it used? <a name="subparagraphhref"></a>
+Putting the "#" symbol as the href for something means that it points not to a different URL, but rather to another id or name tag on the same page. For example:
+```html
+<a href="#bottomOfPage">Click to go to the bottom of the page</a>
+blah blah
+blah blah
+...
+<a id="bottomOfPage"></a>
+```
+
+
+
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
