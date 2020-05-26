@@ -177,7 +177,17 @@ Putting the "#" symbol as the href for something means that it points not to a d
 <a id="bottomOfPage"></a>
 ```
 ### Reading Margins <a name="subparagraphmargin"></a>
-
+Reading margins is really important:
+```css
+margin: 5px 0px 100px; /*reads margin top is 5px, margin to sides is 0px, margin below is 0px*/
+```
+another example:
+```css
+.container {
+  width: 900px;
+  margin: 24px auto;
+}
+```
 
 
 ## Ruby <a name="ruby"></a>
