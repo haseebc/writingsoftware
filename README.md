@@ -1,6 +1,12 @@
 # Table of contents
 1. [Frontend](#frontend)
     1. [Header](#subparagraph1)
+    2. [Banner](#subparagraph2)
+    3. [Container](#subparagraph3)
+    4. [Button](#subparagraph4)
+    5. [Card](#subparagraph5)
+    6. [Cards](#subparagraph6)
+    7. [Footer](#subparagraph7)
 2. [Ruby](#ruby)
 
 3. [Another paragraph](#paragraph2)
