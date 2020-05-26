@@ -9,6 +9,8 @@
     7. [Footer](#subparagraph7)
     8. [Navbar](#subparagraph8)
     9. [What is href="#"](#subparagraphhref)
+    10. [Reading Margins](#subparagraphmargin)
+    
 2. [Ruby](#ruby)
 
 3. [Another paragraph](#paragraph2)
@@ -171,9 +173,10 @@ Putting the "#" symbol as the href for something means that it points not to a d
 <a href="#bottomOfPage">Click to go to the bottom of the page</a>
   blah blah
   blah blah
-...
+  ...
 <a id="bottomOfPage"></a>
 ```
+### Reading Margins <a name="subparagraphmargin"></a>
 
 
 
