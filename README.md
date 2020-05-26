@@ -17,7 +17,7 @@ HTML
 CSS
 JS
 ### Header <a name="subparagraph1"></a>
-Header
+
 ```html
   <head>
      <!-- Responsiveness,one lined below detect width of the device  -->
