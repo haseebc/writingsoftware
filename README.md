@@ -9,8 +9,9 @@
     7. [Footer](#subparagraph7)
     8. [Navbar](#subparagraph8)
     9. [Tabs](#subparagraph9)
-    10. [What is href="#"](#subparagraphhref)
-    11. [Reading Margins](#subparagraphmargin)
+    10. [Search Form](#subparagraph10)
+    11. [What is href="#"](#subparagraphhref)
+    12. [Reading Margins](#subparagraphmargin)
     
 2. [Ruby](#ruby)
 
@@ -200,7 +201,53 @@ Here's some styling of tabls that could be useful.
     border-bottom: 3px solid #555555;
   }
 ```
+### Search Form <a name="subparagraph10"></a>
+```html
+<form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+</form>
+```
+Here's the erb code:
+```erb
+<%= simple_form_for :search, url: root_path, method: :get do |f| %>
+  <div class="search-form-control form-group">
+    <input class="form-control string required" type="text" name="search[query]" id="search_query" />
+    <button name="button" type="submit" class="btn btn-flat">
+      <i class="fas fa-search"></i> Search
+    </button>
+  </div>
+<% end %>
+```
+The css code.
+```css
+.search-form-control {
+  position: relative;
+}
 
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+}
+
+.search-form-control .form-control {
+  height: 3.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+}
+
+.search-form-control .form-control:focus {
+  border: 1px solid #1EDD88;
+  outline: none !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+```
 
 ### What is href="#" and why is it used? <a name="subparagraphhref"></a>
 Putting the "#" symbol as the href for something means that it points not to a different URL, but rather to another id or name tag on the same page. For example:
@@ -223,6 +270,7 @@ another example:
   margin: 24px auto;
 }
 ```
+
 
 
 ## Ruby <a name="ruby"></a>
