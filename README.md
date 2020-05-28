@@ -5,7 +5,7 @@
     3. [Container](#subparagraph3)
     4. [Button](#subparagraph4)
     5. [Card](#subparagraph5)
-    6. [Cards](#subparagraph6)
+    6. [Card Category](#subparagraph6)
     7. [Footer](#subparagraph7)
     8. [Navbar](#subparagraph8)
     9. [Tabs](#subparagraph9)
@@ -86,6 +86,40 @@ I then styled it as follows
     font-size: 20px;
   }
 ```
+
+####LeWagon Banner
+```html
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <a class="btn btn-flat" href="#">Apply now</a>
+  </div>
+</div>
+```
+```css
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+```
+
 ### Container <a name="subparagraph3"></a>
 Maybe have a generic container that stretches across the screen
 ```css
@@ -107,6 +141,60 @@ Maybe have a generic container that stretches across the screen
   border-radius: 4px;
 }
 ```
+####LeWagon button
+```html
+<a class="btn btn-ghost" href="#">Write a story</a>
+<a class="btn btn-flat" href="#">Book now</a>
+<a class="btn btn-gradient" href="#">Start now</a>
+```
+```erb
+<%= link_to "Write a story", "#", class: "btn btn-ghost" %>
+<%= link_to "Book now", "#", class: "btn btn-flat" %>
+<%= link_to "Start now", "#", class: "btn btn-gradient" %>
+```
+```css
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: linear-gradient(#167FFB, #0F60C4);
+  transition: background 0.3s ease;
+  border: 1px solid #0F60C4;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#147EFF, #0F67DA);
+  color: white;
+}
+
 
 ### Card <a name="subparagraph5"></a>
 First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
@@ -132,7 +220,7 @@ Change the text to make it a bit lighter:
   opacity: 0.5;
 }
 ```
-### Cards <a name="subparagraph6"></a>
+### Card Category <a name="subparagraph6"></a>
 This is a separate div for a selection of cards.
 Align elements next to each other using flexbox.
 .cards {
@@ -140,6 +228,29 @@ Align elements next to each other using flexbox.
   justify-content: space-between;
   margin-bottom: 30px ;
 }
+####LeWagon Card category
+```html
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  Breakfast
+</div>
+```
+```css
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+```
+
 ### Footer <a name="subparagraph7"></a>
 Got o fontawesome and get the code for each font you want to use, for instance for twitter copy `<i class="fas fa-heart"></i>`.
 First sort out its background-color, padding and text-align.
