@@ -194,8 +194,6 @@ Maybe have a generic container that stretches across the screen
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
-
-
 ### Card <a name="subparagraph5"></a>
 First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
 ```css
