@@ -10,8 +10,9 @@
     8. [Navbar](#subparagraph8)
     9. [Tabs](#subparagraph9)
     10. [Search Form](#subparagraph10)
-    11. [What is href="#"](#subparagraphhref)
-    12. [Reading Margins](#subparagraphmargin)
+    11. [Alert](#subparagraph11) 
+    12. [What is href="#"](#subparagraphhref)
+    13. [Reading Margins](#subparagraphmargin)
     
 2. [Ruby](#ruby)
 
@@ -248,6 +249,56 @@ The css code.
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 ```
+### Alert <a name="subparagraph11"></a>
+####Lewagon#### alert component
+```html
+<div class="flash flash-success alert alert-dismissible fade show" role="alert">
+  <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
+  <a data-dismiss="alert" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </a>
+</div>
+
+<div class="flash flash-warning alert alert-dismissible fade show" role="alert">
+  <span><strong>Mmh</strong> 🤔 seems like you don't have <a href="#">profile picture</a> yet.</span>
+  <a data-dismiss="alert" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </a>
+</div>
+
+<div class="flash flash-danger alert alert-dismissible fade show" role="alert">
+  <span><strong>Oops!</strong> 😱 a problem has occurred while processing your booking.</span>
+  <a data-dismiss="alert" aria-label="Close">
+    <i class="fas fa-times"></i>
+  </a>
+</div>
+```
+The css:
+```css
+.flash {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.flash-success {
+  border: 2px solid #1EDD88;
+}
+
+.flash-warning {
+  border: 2px solid #FFC65A;
+}
+
+.flash-danger {
+  border: 2px solid #FD1015;
+}
+```
+
 
 ### What is href="#" and why is it used? <a name="subparagraphhref"></a>
 Putting the "#" symbol as the href for something means that it points not to a different URL, but rather to another id or name tag on the same page. For example:
