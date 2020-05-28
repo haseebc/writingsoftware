@@ -250,7 +250,7 @@ The css code.
 }
 ```
 ### Alert <a name="subparagraph11"></a>
-#### Lewagon alert component
+#### Lewagon alert
 ```html
 <div class="flash flash-success alert alert-dismissible fade show" role="alert">
   <span><strong>Yay!</strong> 🎉 you successfully signed in to our service.</span>
