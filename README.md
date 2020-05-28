@@ -8,8 +8,9 @@
     6. [Cards](#subparagraph6)
     7. [Footer](#subparagraph7)
     8. [Navbar](#subparagraph8)
-    9. [What is href="#"](#subparagraphhref)
-    10. [Reading Margins](#subparagraphmargin)
+    9. [Tabs](#subparagraph9)
+    10. [What is href="#"](#subparagraphhref)
+    11. [Reading Margins](#subparagraphmargin)
     
 2. [Ruby](#ruby)
 
@@ -167,6 +168,40 @@ Firtly centre the navbar logo, then style it.
   width: 50px;
 }
 ```
+### Tabs <a name="subparagraph9"></a>
+Tabs are really easy and vvery useful.
+```html
+<div class="tabs">
+  <a href="#" class="tab active">Traveling</a>
+  <a href="#" class="tab">Hosting</a>
+</div>
+```
+Here's some styling of tabls that could be useful.
+```css
+.tabs {
+    list-style: none;
+    margin-bottom: 16px;
+    display: flex;
+  }
+  .tab {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    opacity: 0.3;
+    border-bottom: 5px solid transparent;
+    text-decoration: none;
+    color: black;
+  }
+  .tab:hover {
+    opacity: 1;
+  }
+  .tab.active {
+    opacity: 1;
+    border-bottom: 3px solid #555555;
+  }
+```
+
+
 ### What is href="#" and why is it used? <a name="subparagraphhref"></a>
 Putting the "#" symbol as the href for something means that it points not to a different URL, but rather to another id or name tag on the same page. For example:
 ```html
