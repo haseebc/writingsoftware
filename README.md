@@ -194,6 +194,7 @@ Maybe have a generic container that stretches across the screen
   background: linear-gradient(#147EFF, #0F67DA);
   color: white;
 }
+```
 ### Card <a name="subparagraph5"></a>
 First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
 ```css
@@ -221,11 +222,13 @@ Change the text to make it a bit lighter:
 ### Card Category <a name="subparagraph6"></a>
 This is a separate div for a selection of cards.
 Align elements next to each other using flexbox.
+```css
 .cards {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px ;
 }
+```
 ####LeWagon Card category
 ```html
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
