@@ -361,7 +361,7 @@ Here's some styling of tabls that could be useful.
     border-bottom: 3px solid #555555;
   }
 ```
-### Search Form <a name="subparagraph10"></a>
+### Search Form <a name="subparagraph11"></a>
 ```html
 <form novalidate="novalidate" class="simple_form search" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
   <div class="search-form-control form-group">
@@ -408,7 +408,7 @@ The css code.
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 ```
-### Alert <a name="subparagraph11"></a>
+### Alert <a name="subparagraph12"></a>
 #### Lewagon alert
 ```html
 <div class="flash flash-success alert alert-dismissible fade show" role="alert">
@@ -457,7 +457,7 @@ The css:
   border: 2px solid #FD1015;
 }
 ```
-### Avatar <a name="subparagraph12"></a>
+### Avatar <a name="subparagraph13"></a>
 #### Lewagon alert
 ```html
 <img class="avatar" alt="avatar" src="https://kitt.lewagon.com/placeholder/users/cveneziani" />
