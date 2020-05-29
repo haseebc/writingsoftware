@@ -4,14 +4,15 @@
     2. [Banner](#subparagraph2)
     3. [Container](#subparagraph3)
     4. [Button](#subparagraph4)
-    5. [Card](#subparagraph5)
-    6. [Card Category](#subparagraph6)
-    7. [Footer](#subparagraph7)
-    8. [Navbar](#subparagraph8)
-    9. [Tabs](#subparagraph9)
-    10. [Search Form](#subparagraph10)
-    11. [Alert](#subparagraph11) 
-    12. [Avatar](#subparagraph12) 
+    5. [Card Product](#subparagraph5)
+    5. [Card](#subparagraph6)
+    6. [Card Category](#subparagraph7)
+    7. [Footer](#subparagraph8)
+    8. [Navbar](#subparagraph9)
+    9. [Tabs](#subparagraph10)
+    10. [Search Form](#subparagraph11)
+    11. [Alert](#subparagraph12) 
+    12. [Avatar](#subparagraph13) 
     12. [What is href="#"](#subparagraphhref)
     13. [Reading Margins](#subparagraphmargin)
     
@@ -195,7 +196,52 @@ Maybe have a generic container that stretches across the screen
   color: white;
 }
 ```
-### Card <a name="subparagraph5"></a>
+### Card Product<a name="subparagraph5"></a>
+####Le Wagon Card product
+```html
+<div class="card-product">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+  <div class="card-product-infos">
+    <h2>Product name</h2>
+    <p>Product description with <strong>relevant info</strong> only.</p>
+  </div>
+</div>
+```
+```css
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+```
+### Card <a name="subparagraph6"></a>
 First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
 ```css
 .card img {
@@ -219,7 +265,7 @@ Change the text to make it a bit lighter:
   opacity: 0.5;
 }
 ```
-### Card Category <a name="subparagraph6"></a>
+### Card Category <a name="subparagraph7"></a>
 This is a separate div for a selection of cards.
 Align elements next to each other using flexbox.
 ```css
@@ -252,7 +298,7 @@ Align elements next to each other using flexbox.
 }
 ```
 
-### Footer <a name="subparagraph7"></a>
+### Footer <a name="subparagraph8"></a>
 Got o fontawesome and get the code for each font you want to use, for instance for twitter copy `<i class="fas fa-heart"></i>`.
 First sort out its background-color, padding and text-align.
 ```css
@@ -262,7 +308,7 @@ First sort out its background-color, padding and text-align.
     padding: 60px;
 }  
 ```
-### Navbar <a name="subparagraph8"></a>
+### Navbar <a name="subparagraph9"></a>
 Firtly centre the navbar logo, then style it.
 ```html
 <div class="navbar_dribble">
@@ -283,7 +329,7 @@ Firtly centre the navbar logo, then style it.
   width: 50px;
 }
 ```
-### Tabs <a name="subparagraph9"></a>
+### Tabs <a name="subparagraph10"></a>
 Tabs are really easy and vvery useful.
 ```html
 <div class="tabs">
