@@ -18,7 +18,7 @@
     
 2. [Ruby](#ruby)
 
-3. [Another paragraph](#paragraph2)
+3. [Rails MVP Model](#paragraph2)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -526,3 +526,22 @@ another example:
 
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
+
+## Rails MVP Model <a name="#paragraph2"></a>
+Basic Ruby concepts.
+####The Model
+
+Contains data for the application (often linked to a database)
+Contains state of the application (e.g. what orders a customer has)
+Contains all business logic
+Notifies the View of state changes (** not true of ROR, see below)
+No knowledge of user interfaces, so it can be reused
+####The View
+Generates the user interface which presents data to the user
+Passive, i.e. doesn’t do any processing
+Views work is done once the data is displayed to the user.
+Many views can access the same model for different reasons
+####The Controller
+Receive events from the outside world (usually through views)
+Interact with the model
+Displays the appropriate view to the user
