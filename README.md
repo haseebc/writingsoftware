@@ -537,12 +537,12 @@ Contains state of the application (e.g. what orders a customer has)
 Contains all business logic
 Notifies the View of state changes (** not true of ROR, see below)
 No knowledge of user interfaces, so it can be reused
-####The View
+### The View
 Generates the user interface which presents data to the user
 Passive, i.e. doesn’t do any processing
 Views work is done once the data is displayed to the user.
 Many views can access the same model for different reasons
-####The Controller
+### The Controller
 Receive events from the outside world (usually through views)
 Interact with the model
 Displays the appropriate view to the user
