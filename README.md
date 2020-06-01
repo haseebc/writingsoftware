@@ -531,18 +531,14 @@ Basic Ruby concepts.
 
 Basic Ruby concepts.
 ### The Model
+It maintains the relationship between the objects and the database and handles validation, association, transactions, and more.
 
-Contains data for the application (often linked to a database)
-Contains state of the application (e.g. what orders a customer has)
-Contains all business logic
-Notifies the View of state changes (** not true of ROR, see below)
-No knowledge of user interfaces, so it can be reused
+This subsystem is implemented in ActiveRecord library, which provides an interface and binding between the tables in a relational database and the Ruby program code that manipulates database records. Ruby method names are automatically generated from the field names of database tables.
 ### The View
-Generates the user interface which presents data to the user
-Passive, i.e. doesn’t do any processing
-Views work is done once the data is displayed to the user.
-Many views can access the same model for different reasons
+It is a presentation of data in a particular format, triggered by a controller's decision to present the data. They are script-based template systems like JSP, ASP, PHP, and very easy to integrate with AJAX technology.
+
+This subsystem is implemented in ActionView library, which is an Embedded Ruby (ERb) based system for defining presentation templates for data presentation. Every Web connection to a Rails application results in the displaying of a view.
 ### The Controller
-Receive events from the outside world (usually through views)
-Interact with the model
-Displays the appropriate view to the user
+The facility within the application that directs traffic, on the one hand, querying the models for specific data, and on the other hand, organizing that data (searching, sorting, messaging it) into a form that fits the needs of a given view.
+
+This subsystem is implemented in ActionController, which is a data broker sitting between ActiveRecord (the database interface) and ActionView (the presentation engine).
