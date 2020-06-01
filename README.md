@@ -528,8 +528,9 @@ another example:
 Basic Ruby concepts.
 
 ## Rails MVP Model <a name="#paragraph2"></a>
+
 Basic Ruby concepts.
-####The Model
+### The Model
 
 Contains data for the application (often linked to a database)
 Contains state of the application (e.g. what orders a customer has)
