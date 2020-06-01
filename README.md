@@ -18,7 +18,7 @@
     
 2. [Ruby](#ruby)
 
-3. [Rails MVP Model](#paragraph2)
+3. [Rails MVP](#paragraph2)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -527,7 +527,7 @@ another example:
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
 
-## Rails MVP Model <a name="#paragraph2"></a>
+## Rails MVP <a name="paragraph2"></a>
 
 Basic Ruby concepts.
 ### The Model
