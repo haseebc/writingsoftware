@@ -563,3 +563,13 @@ binding.pry
 some_method          # Execution will stop here.
 puts 'Goodbye World' # Run 'next' in the console to move here.
 ```
+The output is:
+```ruby
+    2: 
+    3: def some_method
+    4:     puts 'Hello World' # Run 'step' in the console to move here
+    5:   end
+    6:   binding.pry
+ => 7:   some_method          # Execution will stop here.
+    8:   puts 'Goodbye World' # Run 'next' in the console to move here.
+```
