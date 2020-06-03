@@ -590,7 +590,7 @@ rails stats
 
 ### Rails Generate
 
-```
+```ruby
 $ rails generate controller Greetings hello
      create  app/controllers/greetings_controller.rb
       route  get 'greetings/hello'
@@ -609,7 +609,7 @@ $ rails generate controller Greetings hello
 
 Check out the controller and modify it a little (in ```app/controllers/greetings_controller.rb```):
 
-```rails
+```ruby
 class GreetingsController < ApplicationController
   def hello
     @message = "Hello, how are you today?"
