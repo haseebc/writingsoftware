@@ -575,7 +575,7 @@ The output is:
 ```
 ### Rails Console
 ```rails console```
-````
+```ruby
 Running via Spring preloader in process 31298
 Loading development environment (Rails 6.0.0)
 [1] pry(main)> Rails.env.production?
