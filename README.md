@@ -584,3 +584,35 @@ Loading development environment (Rails 6.0.0)
 => true
 ```
 https://medium.com/rubyinside/powering-your-ruby-rails-development-with-pry-3d5dbd2a8b80
+
+### Rails Lines of Code
+rails stats 
+
+### Rails Generate
+
+```
+$ rails generate controller Greetings hello
+     create  app/controllers/greetings_controller.rb
+      route  get 'greetings/hello'
+     invoke  erb
+     create    app/views/greetings
+     create    app/views/greetings/hello.html.erb
+     invoke  test_unit
+     create    test/controllers/greetings_controller_test.rb
+     invoke  helper
+     create    app/helpers/greetings_helper.rb
+     invoke    test_unit
+     invoke  assets
+     invoke    scss
+     create      app/assets/stylesheets/greetings.scss
+```
+
+Check out the controller and modify it a little (in ```app/controllers/greetings_controller.rb```):
+
+```rails
+class GreetingsController < ApplicationController
+  def hello
+    @message = "Hello, how are you today?"
+  end
+end
+```
