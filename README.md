@@ -583,3 +583,4 @@ Loading development environment (Rails 6.0.0)
 [2] pry(main)> Rails.env.development?
 => true
 ```
+https://medium.com/rubyinside/powering-your-ruby-rails-development-with-pry-3d5dbd2a8b80
