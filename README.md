@@ -573,3 +573,12 @@ The output is:
  => 7:   some_method          # Execution will stop here.
     8:   puts 'Goodbye World' # Run 'next' in the console to move here.
 ```
+### Rails Console
+```rails console```
+````
+Running via Spring preloader in process 31298
+Loading development environment (Rails 6.0.0)
+[1] pry(main)> Rails.env.production?
+=> false
+[2] pry(main)> 
+```
