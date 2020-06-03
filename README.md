@@ -616,3 +616,13 @@ class GreetingsController < ApplicationController
   end
 end
 ```
+
+Then the view, to display our message (in ```app/views/greetings/hello.html.erb```):
+```html
+<h1>A Greeting for You!</h1>
+<p><%= @message %></p>
+Fire up your server using rails server.
+```
+The URL will be http://localhost:3000/greetings/hello.
+
+With a normal, plain-old Rails application, your URLs will generally follow the pattern of http://(host)/(controller)/(action), and a URL like http://(host)/(controller) will hit the index action of that controller.
