@@ -15,6 +15,7 @@
     12. [Avatar](#subparagraph13) 
     12. [What is href="#"](#subparagraphhref)
     13. [Reading Margins](#subparagraphmargin)
+    14. [Rails Generate](#railsgenerate)
     
 2. [Ruby](#ruby)
 
@@ -588,7 +589,7 @@ https://medium.com/rubyinside/powering-your-ruby-rails-development-with-pry-3d5d
 ### Rails Lines of Code
 rails stats 
 
-### Rails Generate
+### Rails Generate <a name="railsgenerate"></a>
 
 ```ruby
 $ rails generate controller Greetings hello
