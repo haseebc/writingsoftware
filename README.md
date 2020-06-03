@@ -580,5 +580,6 @@ Running via Spring preloader in process 31298
 Loading development environment (Rails 6.0.0)
 [1] pry(main)> Rails.env.production?
 => false
-[2] pry(main)> 
+[2] pry(main)> Rails.env.development?
+=> true
 ```
