@@ -554,7 +554,8 @@ Install
 Within the code being debugged
 ```require 'pry' ```
 Put binding.pry where its required, for example:
-```def some_method
+```ruby
+def some_method
   puts 'Hello World' # Run 'step' in the console to move here
 end
 
