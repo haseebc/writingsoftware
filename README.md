@@ -19,6 +19,7 @@
 2. [Ruby](#ruby)
 
 3. [Rails MVP](#paragraph2)
+	1. [Debubugging](#subparagraphpry)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -542,3 +543,22 @@ This subsystem is implemented in ActionView library, which is an Embedded Ruby (
 The facility within the application that directs traffic, on the one hand, querying the models for specific data, and on the other hand, organizing that data (searching, sorting, messaging it) into a form that fits the needs of a given view.
 
 This subsystem is implemented in ActionController, which is a data broker sitting between ActiveRecord (the database interface) and ActionView (the presentation engine).
+
+## Debugging <a name="subparagraphpry"></a>
+Install 
+```ruby
+  gem 'pry-byebug'
+  gem 'pry-rails'
+  gem 'pry'
+```
+Within the code being debugged
+```require 'pry' ```
+Put binding.pry where its required, for example:
+```def some_method
+  puts 'Hello World' # Run 'step' in the console to move here
+end
+
+binding.pry
+some_method          # Execution will stop here.
+puts 'Goodbye World' # Run 'next' in the console to move here.
+```
