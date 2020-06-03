@@ -15,12 +15,13 @@
     12. [Avatar](#subparagraph13) 
     12. [What is href="#"](#subparagraphhref)
     13. [Reading Margins](#subparagraphmargin)
-    14. [Rails Generate](#railsgenerate)
+
     
 2. [Ruby](#ruby)
 
 3. [Rails MVP](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
+	2. [Rails Generate](#railsgenerate)
 
 ## Frontend <a name="frontend"></a>
 HTML
