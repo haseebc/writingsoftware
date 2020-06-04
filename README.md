@@ -696,7 +696,6 @@ class Car
   end
 end
 ```
-
 ```ruby
 my_car = Car.new
 my_car.engine_started?
