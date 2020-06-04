@@ -22,6 +22,8 @@
 3. [Rails MVP](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
 	2. [Rails Generate](#railsgenerate)
+	
+4. [Object Oriented Programmi9ng](#oop)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -635,4 +637,21 @@ With a normal, plain-old Rails application, your URLs will generally follow the 
   pages_about GET  /about(.:format)   pages#about
 pages_contact GET  /contact(.:format) pages#contact
          root GET  /                  pages#home
-````
+```
+## Object Oriented Programming <a name="oob"></a>
+OOP = Data + Behavior
+```String```
+We already have used built-in classes like String
+```ruby
+name = String.new("John Lennon")  # (same as) name = "John Lennon"
+name.split # => [ "John", "Lennon" ]
+```
+- Data (or State) = the list of characters.
+- Behavior = the set of methods which can act on the list of characters.
+###Class and Instances
+A class is like a cake mold. It helps to create a cake, but is not a cake
+An instance of a class is a cake created from a given cake mold
+
+
+
+
