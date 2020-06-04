@@ -676,6 +676,34 @@ class Car
   end
 end
 ```
+####Instance variable - DATA
+```ruby
+class Car
+  def initialize
+    @engine_started = false
+  end
+end
+```
+####Instance methods - BEHAVIOR 1/2
+```ruby
+class Car
+  def initialize
+    @engine_started = false
+  end
+
+  def engine_started?
+    return @engine_started
+  end
+end
+```
+
+```ruby
+my_car = Car.new
+my_car.engine_started?
+# => false
+```
+
+
 
 
 
