@@ -660,7 +660,7 @@ end
 Convention: filename is in lower snake case, class name in upper camel case.
 
 For example: ```sports_car.rb → class SportsCar```
-#####Instantiation
+####Instantiation
 
 
 
