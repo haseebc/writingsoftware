@@ -853,5 +853,13 @@ end
 ```
 External world does not know about both private methods.
 
+- Everything in ruby is an object.
+- OOP is about data (or state) and behavior.
+- State is stored in instance variables (@foo)
+- Behavior is defined by instance methods (def bar in class definition)
 
-
+Pay attention to your class file and your class name. 
+Remember, lower_snake_case(.rb) for file name,
+UpperCamelCase for class name in the class definition. 
+Both must be singular! 
+Remember, the class is the structure that allows you to create lots of different restaurants (with .new).
