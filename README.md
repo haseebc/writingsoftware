@@ -701,9 +701,28 @@ my_car = Car.new
 my_car.engine_started?
 # => false
 ```
+### Instance methods - BEHAVIOR 2/2
+```ruby
+class Car
+  def initialize
+    @engine_started = false
+  end
 
+  def engine_started?
+    return @engine_started
+  end
 
-
+  def start_engine
+    @engine_started = true
+  end
+end
+```
+```ruby
+my_car = Car.new
+my_car.engine_started? #=> false
+my_car.start_engine
+my_car.engine_started? #=> true
+```
 
 
 
