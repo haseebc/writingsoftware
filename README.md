@@ -23,7 +23,7 @@
 	1. [Debubugging](#subparagraphpry)
 	2. [Rails Generate](#railsgenerate)
 	
-4. [Object Oriented Programmi9ng](#oop)
+4. [Object Oriented Programming](#oop)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -638,7 +638,7 @@ With a normal, plain-old Rails application, your URLs will generally follow the 
 pages_contact GET  /contact(.:format) pages#contact
          root GET  /                  pages#home
 ```
-## Object Oriented Programming <a name="oob"></a>
+## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
 ```String```
 We already have used built-in classes like String
@@ -651,6 +651,18 @@ name.split # => [ "John", "Lennon" ]
 ###Class and Instances
 A class is like a cake mold. It helps to create a cake, but is not a cake
 An instance of a class is a cake created from a given cake mold
+####Create a Class
+```ruby
+# car.rb
+class Car
+end
+```
+Convention: filename is in lower snake case, class name in upper camel case.
+
+For example: ```sports_car.rb → class SportsCar```
+#####Instantiation
+
+
 
 
 
