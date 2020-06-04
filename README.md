@@ -823,10 +823,35 @@ my_car.color = "green" # car color has been updated
 ```
 ```attr_accessor```
 ```attr_reader + attr_writer = attr_accessor```
+```ruby
+class Car
+  attr_accessor :color  # Can read and write the color property
+end
+```
+```ruby
+my_car = Car.new
+my_car.color = "red"
+my_car.color
+# => "red"
+```
+### Private interface
+```ruby
+class Car
+  def start_engine
+    start_fuel_pump
+    init_spark_plug
+  end
 
+  private
 
+  def start_fuel_pump
+  end
 
-
+  def init_spark_plug
+  end
+end
+```
+External world does not know about both private methods.
 
 
 
