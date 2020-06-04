@@ -648,6 +648,7 @@ name.split # => [ "John", "Lennon" ]
 ```
 - Data (or State) = the list of characters.
 - Behavior = the set of methods which can act on the list of characters.
+
 ###Class and Instances
 A class is like a cake mold. It helps to create a cake, but is not a cake
 An instance of a class is a cake created from a given cake mold
@@ -660,13 +661,13 @@ end
 Convention: filename is in lower snake case, class name in upper camel case.
 
 For example: ```sports_car.rb → class SportsCar```
-####Instantiation
+###Instantiation
 ```ruby
 my_car = Car.new
 your_car = Car.new
 ```
 We just created two new instances of the class Car.
-####Constructor
+###Constructor
 ```ruby
 Car.new # => Instantiates the class, then calls the method `initialize`.
 ```
@@ -676,7 +677,7 @@ class Car
   end
 end
 ```
-####Instance variable - DATA
+###Instance variable - DATA
 ```ruby
 class Car
   def initialize
@@ -684,7 +685,7 @@ class Car
   end
 end
 ```
-####Instance methods - BEHAVIOR 1/2
+###Instance methods - BEHAVIOR 1/2
 ```ruby
 class Car
   def initialize
