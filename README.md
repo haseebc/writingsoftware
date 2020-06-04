@@ -661,8 +661,21 @@ Convention: filename is in lower snake case, class name in upper camel case.
 
 For example: ```sports_car.rb → class SportsCar```
 ####Instantiation
-
-
+```ruby
+my_car = Car.new
+your_car = Car.new
+```
+We just created two new instances of the class Car.
+####Constructor
+```ruby
+Car.new # => Instantiates the class, then calls the method `initialize`.
+```
+```ruby
+class Car
+  def initialize
+  end
+end
+```
 
 
 
