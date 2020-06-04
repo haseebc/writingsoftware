@@ -806,7 +806,7 @@ my_car.color = "green" # (same as) my_car.color=("green")
 my_car.color
 #=> "green"
 ```
-```attr_writer````
+```attr_writer```
 Again there is a shortcut method
 ```ruby
 class Car
