@@ -630,7 +630,9 @@ The URL will be http://localhost:3000/greetings/hello.
 With a normal, plain-old Rails application, your URLs will generally follow the pattern of http://(host)/(controller)/(action), and a URL like http://(host)/(controller) will hit the index action of that controller.
 
 ### Rails Routes <a name="railsroutes"></a>
+```ruby
        Prefix Verb URI Pattern        Controller#Action
   pages_about GET  /about(.:format)   pages#about
 pages_contact GET  /contact(.:format) pages#contact
          root GET  /                  pages#home
+````
