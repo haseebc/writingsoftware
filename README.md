@@ -723,6 +723,110 @@ my_car.engine_started? #=> false
 my_car.start_engine
 my_car.engine_started? #=> true
 ```
+### Setting and accessing state
+```ruby
+class Car
+  def initialize(color)
+    @color = color
+  end
+end
+```
+```ruby
+red_car = Car.new("red")
+green_car = Car.new("green")
+```
+### Explicit reader
+```ruby
+class Car
+  def initialize(color)
+    @color = color
+  end
+
+  def color
+    return @color
+  end
+end
+```
+```ruby
+red_car = Car.new("red")
+puts red_car.color
+# => "red"
+```
+```attr_reader```
+```ruby
+class Car
+  def color
+    return @color
+  end
+end
+```
+equivalent to
+```ruby
+class Car
+  attr_reader :color
+end
+```
+```attr_reader```convenient shortcut
+```ruby
+class Car
+  def color
+    return @color
+  end
+
+  def brand
+    return @brand
+  end
+end
+```
+equivalent to
+```ruby
+class Car
+  attr_reader :color, :brand
+end
+```
+Explicit writer
+```ruby
+class Car
+  attr_reader :color
+
+  def initialize(color)
+    @color = color
+  end
+
+  def color=(new_color)
+    @color = new_color
+  end
+end
+```
+```ruby
+my_car = Car.new("red")
+my_car.color
+#=> "red"
+my_car.color = "green" # (same as) my_car.color=("green")
+my_car.color
+#=> "green"
+```
+```attr_writer````
+Again there is a shortcut method
+```ruby
+class Car
+  attr_writer :color
+
+  def initialize(color)
+    @color = color
+  end
+end
+```
+```ruby
+my_car = Car.new("red")
+my_car.color = "green" # car color has been updated
+```
+```attr_accessor```
+```attr_reader + attr_writer = attr_accessor```
+
+
+
+
 
 
 
