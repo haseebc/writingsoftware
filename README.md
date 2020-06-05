@@ -531,6 +531,10 @@ another example:
 
 ## Ruby <a name="ruby"></a>
 Basic Ruby concepts.
+```irb``` 
+use the terminal ruby environment
+```ri split```
+decribes method split 
 
 ## Rails MVP <a name="paragraph2"></a>
 
@@ -863,3 +867,42 @@ Remember, lower_snake_case(.rb) for file name,
 UpperCamelCase for class name in the class definition. 
 Both must be singular! 
 Remember, the class is the structure that allows you to create lots of different restaurants (with .new).
+
+So first we add data to a class and then behaviour.
+We have a class created, then addd some date to a class and then add behaviour
+
+### Object Orientated Oriented Programming in a Nutshell
+- First make the class
+- Add the data 
+- Then the behaviour
+
+The class
+```ruby
+class Restaurant
+    def initialize(name, address, foodtype)
+      @name = name
+      @address = address
+      @mealprice = mealprice
+    end
+end
+
+#this is the class, then we add data to the class and then behaviour
+```
+
+Data and behaviour
+```ruby
+require_relative "restaurant"
+
+# Okay its really easy, first we create a class (restaurant.rb lass above) and add data to it
+best_indian = Restaurant.new("kebabmahal", "calle fuertes", 100)
+classic_spanish    = Restaurant.new("cochio", "calle san juan", 50)
+
+#Then we add behaviour 
+
+restaurant = Restaurant.new("T", "Ford", 0)
+p restaurant
+```
+
+
+
+
