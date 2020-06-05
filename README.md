@@ -902,7 +902,7 @@ classic_spanish    = Restaurant.new("cochio", "calle san juan", 50)
 restaurant = Restaurant.new("T", "Ford", 0)
 p restaurant
 ```
-
-
-
+### Super Common Error with Class
+```uninitialized constant Car (NameError)```
+Above just means why are you trying to use a class on data when you have no Class setup such as an actual restaruant.rb file with ```class Restaurant```
 
