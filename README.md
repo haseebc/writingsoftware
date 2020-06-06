@@ -905,4 +905,5 @@ p restaurant
 ### Super Common Error with Class
 ```uninitialized constant Car (NameError)```
 Above just means why are you trying to use a class on data when you have no Class setup such as an actual restaruant.rb file with ```class Restaurant```
-
+The following line of code would give this error is used in the code block above. Basic problem is 
+restaurant = car.new("T", "Ford", 0)
