@@ -24,6 +24,7 @@
 	2. [Rails Generate](#railsgenerate)
 	
 4. [Object Oriented Programming](#oop)
+	1. [Class and Instances](#class)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -652,7 +653,7 @@ name.split # => [ "John", "Lennon" ]
 ```
 - Data (or State) = the list of characters.
 - Behavior = the set of methods which can act on the list of characters.
-### Class and Instances
+### Class and Instances <a name="class"></a>
 A class is like a cake mold. It helps to create a cake, but is not a cake
 An instance of a class is a cake created from a given cake mold
 Create a Class
@@ -909,4 +910,5 @@ The following line of code would give this error is used in the code block above
 ```ruby
 restaurant = car.new("T", "Ford", 0)
 ``` 
-does not have car.rb Class coded.
+does not have ```car.rb``` Class coded.
+
