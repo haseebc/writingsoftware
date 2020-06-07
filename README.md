@@ -648,7 +648,7 @@ pages_contact GET  /contact(.:format) pages#contact
 
 ### Rails Basics <a name="railsbasics"></a>
 For every user action in Rails, we need to code **(i) a route, (ii) an action, and (iii) a view**.
-**Route**
+#### Route ####
 Write a simple route to serve the GET /ask HTTP request to the ask action of the questions controller. As a reminder, here is the pattern of a route coded in Rails:
 ```ruby
 verb "url", to: "controller#action"
@@ -664,7 +664,7 @@ Prefix Verb URI Pattern       Controller#Action
    ask GET  /ask(.:format)    questions#ask
 ```
 So its really simple, if we do a GET for ask we end up going to the QuestionsController which is ```questions_controller.rb``` with the action of ```ask```.
-**Controller**
+#### Controller ####
 Run the controller for this 
 
 
