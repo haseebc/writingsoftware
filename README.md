@@ -25,6 +25,8 @@
 	
 4. [Object Oriented Programming](#oop)
 	1. [Class and Instances](#class)
+	2. [Instantiation](#instance)
+	3. [OOP in a Nutshell](#OOBsummary)
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -665,7 +667,7 @@ end
 Convention: filename is in lower snake case, class name in upper camel case.
 
 For example: ```sports_car.rb → class SportsCar```
-### Instantiation
+### Instantiation <a name="instance"></a>
 ```ruby
 my_car = Car.new
 your_car = Car.new
@@ -839,6 +841,8 @@ my_car.color = "red"
 my_car.color
 # => "red"
 ```
+
+
 ### Private interface
 ```ruby
 class Car
@@ -872,7 +876,7 @@ Remember, the class is the structure that allows you to create lots of different
 So first we add data to a class and then behaviour.
 We have a class created, then addd some date to a class and then add behaviour
 
-### Object Orientated Oriented Programming in a Nutshell
+### Object Orientated Oriented Programming in a Nutshell <a name="OOBsummary"></a>
 - First make the class
 - Add the data 
 - Then the behaviour
