@@ -645,6 +645,19 @@ With a normal, plain-old Rails application, your URLs will generally follow the 
 pages_contact GET  /contact(.:format) pages#contact
          root GET  /                  pages#home
 ```
+
+### Rails Basics <a name="railsbasics"></a>
+For every user action in Rails, we need to code **(i) a route, (ii) an action, and (iii) a view**.
+**Route**
+Write a simple route to serve the GET /ask HTTP request to the ask action of the questions controller. As a reminder, here is the pattern of a route coded in Rails:
+```ruby
+verb "url", to: "controller#action"
+```
+For example:
+```ruby
+get "ask", to: "questions#ask"
+```
+
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
 ```String```
