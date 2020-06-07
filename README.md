@@ -986,4 +986,4 @@ The following line of code would give this error is used in the code block above
 restaurant = car.new("T", "Ford", 0)
 ``` 
 does not have ```car.rb``` Class coded.
-That's it. In order to understand how *attr_reader, attr_writer, and attr_accessor methods actually generate methods for you*!
+That's it. In order to understand how **attr_reader, attr_writer, and attr_accessor** methods *actually generate methods for you*!
