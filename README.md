@@ -22,6 +22,7 @@
 3. [Rails MVP](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
 	2. [Rails Generate](#railsgenerate)
+	2. [Rails Overview:The Basics](#railsbasics)
 	
 4. [Object Oriented Programming](#oop)
 	1. [Class and Instances](#class)
@@ -646,7 +647,7 @@ pages_contact GET  /contact(.:format) pages#contact
          root GET  /                  pages#home
 ```
 
-### Rails Basics <a name="railsbasics"></a>
+### Rails Basics <a name="railsbasics"></a> 
 For every user action in Rails, we need to code **(i) a route, (ii) an action, and (iii) a view**.
 #### Route ####
 Write a simple route to serve the GET /ask HTTP request to the ask action of the questions controller. As a reminder, here is the pattern of a route coded in Rails:
