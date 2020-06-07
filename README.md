@@ -658,6 +658,17 @@ For example:
 get "ask", to: "questions#ask"
 ```
 
+```rails routes``` gives:
+```ruby
+Prefix Verb URI Pattern       Controller#Action
+   ask GET  /ask(.:format)    questions#ask
+```
+So its really simple, if we do a GET for ask we end up going to the QuestionsController which is ```questions_controller.rb``` with the action of ```ask```.
+**Controller**
+Run the controller for this 
+
+
+
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
 ```String```
