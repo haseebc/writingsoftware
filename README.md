@@ -250,7 +250,7 @@ Maybe have a generic container that stretches across the screen
   padding: 16px;
 }
 ```
-### Card <a name="subparagraph6"></a>
+### Card  <a name="subparagraph6"></a>
 First make the images smaller in the cards `width: 150px;` Mase sure use .card img so only this card image is changed.
 ```css
 .card img {
