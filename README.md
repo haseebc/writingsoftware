@@ -659,16 +659,32 @@ For example:
 get "ask", to: "questions#ask"
 ```
 
+
+So its really simple, if we do a GET for ask we end up going to the QuestionsController which is ```questions_controller.rb``` with the action of ```ask```.
+#### Controller ####
+Run the controller for this 
+```rails generate controller QuestionsController```
+
 ```rails routes``` gives:
 ```ruby
 Prefix Verb URI Pattern       Controller#Action
    ask GET  /ask(.:format)    questions#ask
 ```
-So its really simple, if we do a GET for ask we end up going to the QuestionsController which is ```questions_controller.rb``` with the action of ```ask```.
-#### Controller ####
-Run the controller for this 
 
+#### View ####
+Setup the following within the view.
+Here whats going on is ```action="/answer"```is the url if request it triggers on submit.
 
+```
+<form action="/answer" class="form-inline">
+  <div class="input-group input-group-lg">
+    <input type="text" name="question" class="form-control">
+    <span class="input-group-btn">
+      <input type="submit" value="Ask" class="btn btn-primary">
+    </span>
+  </div>
+</form>
+```
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
