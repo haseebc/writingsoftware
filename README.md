@@ -673,7 +673,9 @@ Prefix Verb URI Pattern       Controller#Action
 
 #### View ####
 Setup the following within the view.
-Here whats going on is ```action="/answer"```is the url if request it triggers on submit.
+Not the *form does this*.
+**GET method.** by default. 
+**```Action```** URL by submit** is ```action="/answer"```is the url if request it triggers on submit.
 
 ```
 <form action="/answer" class="form-inline">
@@ -685,6 +687,8 @@ Here whats going on is ```action="/answer"```is the url if request it triggers o
   </div>
 </form>
 ```
+
+
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
