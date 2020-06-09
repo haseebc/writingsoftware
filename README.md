@@ -675,18 +675,17 @@ Prefix Verb URI Pattern       Controller#Action
 Setup the following within the view.
 Not the *form does this*.
 **GET method.** by default. 
-**```Action```** URL by submit** is ```action="/answer"```is the url if request it triggers on submit.
+**action*** URL triggered by submit is ```action="/answer"```.
+**name** allows setting of the parameter, in this case ```question``` 
 
 ```
-<form action="/answer" class="form-inline">
-  <div class="input-group input-group-lg">
-    <input type="text" name="question" class="form-control">
-    <span class="input-group-btn">
-      <input type="submit" value="Ask" class="btn btn-primary">
-    </span>
-  </div>
+<form action="/answer">
+    <input type="text" name="question" >
+    <input type="submit" value="Ask">
 </form>
 ```
+The above will give a ```No route matches [GET] "/answer"```
+
 
 
 
