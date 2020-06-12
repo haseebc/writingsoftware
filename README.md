@@ -717,7 +717,7 @@ class QuestionsController < ApplicationController
 end
 ```
 #### View again! ####
-
+The only thing worth mentioning is otice ```@question``` is initialised form controller and passed in here. Also notice ```@answer``` comes from the controller. Not so stupid huh?
 ```html
 <h1>Stupid Coaching</h1>
 
