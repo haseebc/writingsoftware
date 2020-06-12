@@ -685,8 +685,37 @@ Not the *form does this*.
 </form>
 ```
 The above will give a ```No route matches [GET] "/answer"```
+To fix this follow the same methodology: **route, action, view**.
 
+Now we want to keep this logic going to explain Rails basics. So lets consider the response to the question above (stupid coaching) by understanding answer as **route, controller and view**.
+#### Route ####
+```ruby
+get 'answer',    to: 'questions#answer' 
+```
 
+#### Controller ####
+Whats important here is we're calling the ```question``` parameter from the view and passing into the controller. 
+Notice instance variable ```@answer``` for the view to display is computed.
+
+```ruby
+class QuestionsController < ApplicationController
+  def ask
+  end
+
+  def answer
+    @question = params[:question]
+    if @question.blank?
+      @answer = "I can't hear you!"
+    elsif @question =~ /i am going to work/i
+      @answer = "Great!"
+    elsif @question.ends_with?("?")
+      @answer = "Silly question, get dressed and go to work!"
+    else
+      @answer = "I don't care, get dressed and go to work!"
+    end
+  end
+end
+```
 
 
 ## Object Oriented Programming <a name="oop"></a>
