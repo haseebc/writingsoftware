@@ -688,14 +688,14 @@ The above will give a ```No route matches [GET] "/answer"```
 To fix this follow the same methodology: **route, action, view**.
 
 Now we want to keep this logic going to explain Rails basics. So lets consider the response to the question above (stupid coaching) by understanding answer as **route, controller and view**.
-#### Route ####
+#### Route again !####
 ```ruby
 get 'answer',    to: 'questions#answer' 
 ```
 
-#### Controller ####
-Whats important here is we're calling the ```question``` parameter from the view and passing into the controller. 
-Notice instance variable ```@answer``` for the view to display is computed.
+#### Controller again! ####
+Whats important here is we're calling the ```question``` parameter from the view and passing into the controller. Uses *params* really important. 
+Notice instance variable ```@question``` for the view to display is computed. This is important and needs to be initialised.
 
 ```ruby
 class QuestionsController < ApplicationController
@@ -716,7 +716,29 @@ class QuestionsController < ApplicationController
   end
 end
 ```
+#### View again! ####
 
+```html
+<h1>Stupid Coaching</h1>
+
+<blockquote>
+  <p>
+    <% if @question.blank? %>
+      😶
+    <% else %>
+      <%= @question %>
+    <% end %>
+  </p>
+  <cite>You</cite>
+</blockquote>
+
+<blockquote class="coach">
+  <p><%= @answer %></p>
+  <cite>Your coach</cite>
+</blockquote>
+
+<%= link_to "Ask a new question", ask_path %>
+```
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
