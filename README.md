@@ -802,7 +802,7 @@ Rails.application.routes.draw do
   resources :tasks
 end
 ```
-**Conroller**
+**Controller**
 ```bash
 rails generate controller TasksController 
 ```
@@ -815,12 +815,14 @@ class TasksController < ApplicationController
 end
 ```
 This just initialises the task model.
+
 **View**
 Now we know the route exists for seeing a list of tasks, we have a controller for the task for the list (index). The view is built like this.
 Before this we need some actual task to list. So lets **add some to the database**.
 ```bash
 rails console
 ```
+Now add the data:
 ```ruby
 Task.create title: 'Laundry', details: 'Do not mix colors!'
 Task.create title: 'Studying', details: 'A lot of flashcards to do', completed: true
