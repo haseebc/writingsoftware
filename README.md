@@ -769,6 +769,15 @@ Rails.application.routes.draw do
   resources :restaurants
 end
 ```
+#### Example Model: TaskManager   
+Create the rails app and create the model.
+```bash
+rails new rails-task-manager2 --skip-active-storage --skip-action-mailbox
+rails generate model Task title:string details:text completed:boolean
+```
+- Migration file generated ```db/migrate/20200613102314_create_tasks.rb```
+- class Task generated ```app/models/task.rb````
+Now do the migration.
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
