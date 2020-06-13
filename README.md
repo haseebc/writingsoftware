@@ -22,12 +22,14 @@
 3. [Rails MVP](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
 	2. [Rails Generate](#railsgenerate)
-	2. [Rails Overview:The Basics](#railsbasics)
+	3. [Rails Overview:The Basics](#railsbasics)
+	4. [Models and CRUD](#modelscrud)
 	
 4. [Object Oriented Programming](#oop)
 	1. [Class and Instances](#class)
 	2. [Instantiation](#instance)
 	3. [OOP in a Nutshell](#OOBsummary)
+	
 
 ## Frontend <a name="frontend"></a>
 HTML
@@ -738,6 +740,34 @@ The only thing worth mentioning is otice ```@question``` is initialised form con
 </blockquote>
 
 <%= link_to "Ask a new question", ask_path %>
+```
+### Models and CRUD <a name="modelscrud"></a>
+The way models work is you do a ```generate model``` and this creates a migration file and a ```/models/foo.rb file```. Then run a migration which creates db/schema.
+**Routes**
+There are 7 CRUD routes.
+```ruby
+Rails.application.routes.draw do
+  get    "restaurants",          to: "restaurants#index"
+
+  get    "restaurants/new",      to: "restaurants#new",  as: :new_restaurant
+  post   "restaurants",          to: "restaurants#create"
+
+  # NB: The `show` route needs to be *after* `new` route.
+  get    "restaurants/:id",      to: "restaurants#show", as: :restaurant
+
+  get    "restaurants/:id/edit", to: "restaurants#edit", as: :edit_restaurant
+  patch  "restaurants/:id",      to: "restaurants#update"
+
+  delete "restaurants/:id",      to: "restaurants#destroy"
+end
+```
+Know them by heart
+But don’t write them all!
+```ruby
+# config/routes.rb
+Rails.application.routes.draw do
+  resources :restaurants
+end
 ```
 
 ## Object Oriented Programming <a name="oop"></a>
