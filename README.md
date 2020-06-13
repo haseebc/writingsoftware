@@ -806,6 +806,50 @@ end
 ```bash
 rails generate controller TasksController 
 ```
+Now edit the tasks_controller.rb and add a basic view for tasks
+```ruby
+class TasksController < ApplicationController
+    def index
+        @tasks = Task.all
+    end
+end
+```
+This just initialises the task model.
+**View**
+Now we know the route exists for seeing a list of tasks, we have a controller for the task for the list (index). The view is built like this.
+Before this we need some actual task to list. So lets **add some to the database**.
+```bash
+rails console
+```
+```ruby
+Task.create title: 'Laundry', details: 'Do not mix colors!'
+Task.create title: 'Studying', details: 'A lot of flashcards to do', completed: true
+```
+Now on the view for each task provide a link to its title and  
+```ruby
+<h1>My tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= p task.title %>
+    </li>
+  <% end %>
+</ul>
+```
+Ah the above code just prints the object title. Thats good but we want a link to the task. Lets try this:
+```ruby
+<h1>My tasks</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= link_to task.title, task_path(task.id) %>
+    </li>
+  <% end %>
+</ul>
+```
+Great this takes us to teh show action for all the tasks in the database that need to be shown.
+
+
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
