@@ -898,7 +898,7 @@ class Car
 end
 ```
 ### Instance methods - BEHAVIOR 1/2
-```ruby
+```ruby 
 class Car
   def initialize
     @engine_started = false
