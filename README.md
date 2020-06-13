@@ -826,7 +826,7 @@ Task.create title: 'Laundry', details: 'Do not mix colors!'
 Task.create title: 'Studying', details: 'A lot of flashcards to do', completed: true
 ```
 Now on the view for each task provide a link to its title and  
-```ruby
+```html
 <h1>My tasks</h1>
 <ul>
   <% @tasks.each do |task| %>
@@ -837,7 +837,7 @@ Now on the view for each task provide a link to its title and
 </ul>
 ```
 Ah the above code just prints the object title. Thats good but we want a link to the task. Lets try this:
-```ruby
+```html
 <h1>My tasks</h1>
 <ul>
   <% @tasks.each do |task| %>
