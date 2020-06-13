@@ -817,6 +817,7 @@ end
 This just initialises the task model.
 
 **View**
+
 Now we know the route exists for seeing a list of tasks, we have a controller for the task for the list (index). The view is built like this.
 Before this we need some actual task to list. So lets **add some to the database**.
 ```bash
