@@ -770,7 +770,7 @@ Rails.application.routes.draw do
 end
 ```
 #### Example Model: TaskManager   
-Create the rails app and create the model.
+**Create the rails app and create the model.**
 ```bash
 rails new rails-task-manager2 --skip-active-storage --skip-action-mailbox
 rails generate model Task title:string details:text completed:boolean
@@ -794,6 +794,17 @@ ActiveRecord::Schema.define(version: 2020_06_13_102314) do
   end
 
 end
+```
+**Add the routes** 
+```ruby
+Rails.application.routes.draw do
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :tasks
+end
+```
+**Conroller**
+```bash
+rails generate controller TasksController 
 ```
 
 ## Object Oriented Programming <a name="oop"></a>
