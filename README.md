@@ -761,8 +761,8 @@ Rails.application.routes.draw do
   delete "restaurants/:id",      to: "restaurants#destroy"
 end
 ```
-Know them by heart
-But don’t write them all!
+Know them by heart.
+But don’t write them all, this is how to automatically build the 7 CRUD routes.
 ```ruby
 # config/routes.rb
 Rails.application.routes.draw do
@@ -776,8 +776,25 @@ rails new rails-task-manager2 --skip-active-storage --skip-action-mailbox
 rails generate model Task title:string details:text completed:boolean
 ```
 - Migration file generated ```db/migrate/20200613102314_create_tasks.rb```
-- class Task generated ```app/models/task.rb````
+- class Task generated ```app/models/task.rb```
 Now do the migration.
+```bash
+rails db:migrate
+```
+- Database schema is then created ```schema.rb```
+```ruby
+ActiveRecord::Schema.define(version: 2020_06_13_102314) do
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "title"
+    t.text "details"
+    t.boolean "completed"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+end
+```
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
