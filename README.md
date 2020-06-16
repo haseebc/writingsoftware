@@ -617,7 +617,7 @@ $ rails generate controller Greetings hello
      create    app/helpers/greetings_helper.rb
      invoke    test_unit
      invoke  assets
-     invoke    scss
+     invoke    scss 
      create      app/assets/stylesheets/greetings.scss
 ```
 
