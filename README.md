@@ -1203,7 +1203,12 @@ That's it. In order to understand how **attr_reader, attr_writer, and attr_acces
 ### Using Rails Console <a name="railsc"></a>
 ```bash 
 rails c
+In my checks database show everything
 ```
-`Check.all` in my checks database show everything
-`Check.find(1)` in ckecks dabase show me id 25
-
+```ruby
+Check.all
+```
+In checks dabase show me id 25
+```ruby
+Check.find(1)
+```
