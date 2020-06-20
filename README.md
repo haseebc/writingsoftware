@@ -1201,14 +1201,14 @@ That's it. In order to understand how **attr_reader, attr_writer, and attr_acces
 
 ## Database queries <a name="db"></a>
 ### Using Rails Console <a name="railsc"></a>
+In my checks database show everything
 ```bash 
 rails c
-In my checks database show everything
 ```
 ```ruby
 Check.all
 ```
 In checks dabase show me id 25
 ```ruby
-Check.find(1)
+Check.find(25)
 ```
