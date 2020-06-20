@@ -30,7 +30,9 @@
 	2. [Instantiation](#instance)
 	3. [OOP in a Nutshell](#OOBsummary)
 	
-
+5. [Database queries](#db)
+	1. [Using Rails Console](#railsc)
+	
 ## Frontend <a name="frontend"></a>
 HTML
 CSS
@@ -1196,3 +1198,12 @@ restaurant = car.new("T", "Ford", 0)
 ``` 
 does not have ```car.rb``` Class coded.
 That's it. In order to understand how **attr_reader, attr_writer, and attr_accessor** methods *actually generate methods for you*!
+
+## Database queries <a name="db"></a>
+### Using Rails Console <a name="railsc"></a>
+```bash 
+rails c
+```
+`Check.all` in my checks database show everything
+`Check.find(1)` in ckecks dabase show me id 25
+
