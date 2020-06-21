@@ -15,7 +15,7 @@
     12. [Avatar](#subparagraph13) 
     12. [What is href="#"](#subparagraphhref)
     13. [Reading Margins](#subparagraphmargin)
-    14. [Browser icon](#browsericon)
+    14. [favicon Browser icon](#browsericon)
 
     
 2. [Ruby](#ruby)
@@ -535,7 +535,7 @@ another example:
   margin: 24px auto;
 }
 ```
-### Browser icon <a name="browsericon"></a>
+### favicon - Browser icon <a name="browsericon"></a>
 This is the icon in the browser, can be easily styled by just pointing to it in `app/views/layouts/application.htyml.erb`
 ```html
 <!DOCTYPE html>
