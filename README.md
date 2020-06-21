@@ -15,11 +15,12 @@
     12. [Avatar](#subparagraph13) 
     12. [What is href="#"](#subparagraphhref)
     13. [Reading Margins](#subparagraphmargin)
+    14. [Browser icon](#browsericon)
 
     
 2. [Ruby](#ruby)
 
-3. [Rails MVP](#paragraph2)
+3. [Rails MVC](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
 	2. [Rails Generate](#railsgenerate)
 	3. [Rails Overview:The Basics](#railsbasics)
@@ -534,7 +535,14 @@ another example:
   margin: 24px auto;
 }
 ```
-
+### Browser icon <a name="browsericon"></a>
+This is the icon in the browser, can be easily styled by just pointing to it in `app/views/layouts/application.htyml.erb`
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= favicon_link_tag 'favicon.ico' %>
+```
 
 
 ## Ruby <a name="ruby"></a>
