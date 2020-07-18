@@ -863,7 +863,7 @@ Ah the above code just prints the object title. Thats good but we want a link to
 ```
 Great this takes us to teh show action for all the tasks in the database that need to be shown.
 ### Layouts and Rendering <a name="layoutsrendering"></a>
-####Partials to Simplify Views
+#### Partials to Simplify Views
 ```ruby
 <%= render "shared/ad_banner" %>
 <h1>Products</h1>
