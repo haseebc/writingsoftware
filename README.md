@@ -25,6 +25,7 @@
 	2. [Rails Generate](#railsgenerate)
 	3. [Rails Overview:The Basics](#railsbasics)
 	4. [Models and CRUD](#modelscrud)
+	5. [Layouts and Rendering](#layoutsrendering)
 	
 4. [Object Oriented Programming](#oop)
 	1. [Class and Instances](#class)
@@ -861,8 +862,14 @@ Ah the above code just prints the object title. Thats good but we want a link to
 </ul>
 ```
 Great this takes us to teh show action for all the tasks in the database that need to be shown.
-
-
+### Layouts and Rendering <a name="layoutsrendering"></a>
+####Partials to Simplify Views
+```ruby
+<%= render "shared/ad_banner" %>
+<h1>Products</h1>
+<p>Here are a few of our fine products:</p>
+<%= render "shared/footer" %>
+```
 
 ## Object Oriented Programming <a name="oop"></a>
 OOP = Data + Behavior
