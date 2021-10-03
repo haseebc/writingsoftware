@@ -554,8 +554,20 @@ use the terminal ruby environment
 ```ri split```
 decribes method split 
 
-### Flow, Conditionals & Array <a name="subparaflows"></a>
+### Flow, Conditionals & Arrays <a name="subparaflows"></a>
+Ternary operator
+```ruby
+condition ? code_when_truthy : code_when_falsey
+```
+Live-code: let’s flip coins
+```ruby
+puts "heads or tails?"
+choice = gets.chomp
+coin = ["heads", "tails"].sample
 
+result = (choice == coin) ? "winner" : "loser"
+puts "#{result}, that was #{coin}"
+```
 
 ## Rails MVP <a name="paragraph2"></a>
 
