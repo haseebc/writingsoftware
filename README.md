@@ -35,6 +35,9 @@
 	
 5. [Database queries](#db)
 	1. [Using Rails Console](#railsc)
+
+6. [Useful Links](#links)
+
 	
 ## Frontend <a name="frontend"></a>
 HTML
@@ -1295,3 +1298,4 @@ In checks table show me id 25
 ```ruby
 Check.find(25)
 ```
+## Useful Links <a name="links"></a>
