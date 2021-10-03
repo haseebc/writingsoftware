@@ -19,6 +19,7 @@
 
     
 2. [Ruby](#ruby)
+	1. [Flow, Conditionals & Arrays](#subparaflows)
 
 3. [Rails MVC](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
@@ -552,6 +553,9 @@ Basic Ruby concepts.
 use the terminal ruby environment
 ```ri split```
 decribes method split 
+
+### Flow, Conditionals & Array <a name="subparaflows"></a>
+
 
 ## Rails MVP <a name="paragraph2"></a>
 
