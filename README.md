@@ -568,6 +568,58 @@ coin = ["heads", "tails"].sample
 result = (choice == coin) ? "winner" : "loser"
 puts "#{result}, that was #{coin}"
 ```
+Inline conditions
+```ruby
+do_something if condition
+do_something unless condition
+```
+
+```ruby
+number = gets.chomp.to_i
+puts "your number #{number} is even!" if number.even?
+```
+Live-code: find the right price
+
+```ruby
+price_to_find = rand(1..5)
+choice = nil     # variable initialization
+
+while choice != price_to_find
+  puts "How much (between $1 and $5)?"
+  choice = gets.chomp.to_i
+end
+
+puts "You won! Price was #{price_to_find}$"
+```
+Looping with for
+```ruby
+for num in [1, 2, 3]
+  puts num
+end
+```
+Get an element using indexes
+```ruby
+beatles = ["john", "ringo", "seb"]
+beatles[0]  #=> "john"
+beatles[2]  #=> "seb"
+beatles[8]  #=> nil
+```
+Modify an element
+```ruby
+beatles = ["john", "ringo", "seb"]
+beatles[2] = "george"
+p beatles    # => ["john", "ringo", "george"]
+```
+each
+each is your new best friend
+```ruby
+beatles.each do |beatle|
+ puts "#{beatle} is in the Beatles"
+end
+
+beatles.each { |beatle| puts "#{beatle} is in the Beatles" }
+```
+
 
 ## Rails MVP <a name="paragraph2"></a>
 
