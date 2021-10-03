@@ -610,7 +610,7 @@ beatles = ["john", "ringo", "seb"]
 beatles[2] = "george"
 p beatles    # => ["john", "ringo", "george"]
 ```
-each
+
 each is your new best friend
 ```ruby
 beatles.each do |beatle|
