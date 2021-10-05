@@ -20,6 +20,7 @@
     
 2. [Ruby](#ruby)
 	1. [Flow, Conditionals & Arrays](#subparaflows)
+	2. [Iterators & Blocks](#subparaiterators)
 
 3. [Rails MVC](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
@@ -622,7 +623,7 @@ end
 
 beatles.each { |beatle| puts "#{beatle} is in the Beatles" }
 ```
-
+## Iterators & Blocks <a name="subparaiterators"></a>
 Block Syntax
 1-line syntax
 ```ruby
