@@ -623,6 +623,18 @@ end
 beatles.each { |beatle| puts "#{beatle} is in the Beatles" }
 ```
 
+Block Syntax
+1-line syntax
+```ruby
+{ |num| num * 2 }
+```
+
+multi-line syntax
+```ruby
+do |num|
+  num * 2
+end
+```
 
 ## Rails MVP <a name="paragraph2"></a>
 
