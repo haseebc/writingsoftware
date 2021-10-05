@@ -1301,3 +1301,4 @@ Check.find(25)
 ## Useful Links <a name="links"></a>
 ### http://www.ruby-doc.org/core/Array.html
 ### http://www.ruby-doc.org/core/Enumerable.html
+### https://rubydocs.org/d/ruby-2-3-4/
