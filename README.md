@@ -21,6 +21,7 @@
 2. [Ruby](#ruby)
 	1. [Flow, Conditionals & Arrays](#subparaflows)
 	2. [Iterators & Blocks](#subparaiterators)
+	3. [Parsing](#subparaparsing)
 
 3. [Rails MVC](#paragraph2)
 	1. [Debubugging](#subparagraphpry)
@@ -635,6 +636,52 @@ multi-line syntax
 do |num|
   num * 2
 end
+```
+## Parsing <a name="subparai"></a>
+
+EXAMPLE 1 Open a xml via http convert to JSON
+
+```ruby
+require 'json'
+require 'open-uri'
+require 'crack'
+
+unparsed_xml = open('http://websec.app:8080/vercheck_output1.xml')
+myXML  = Crack::XML.parse(unparsed_xml)
+myJSON = myXML.to_json
+myJSON
+```
+
+EXAMPLE 2 Open a JSON via http then parse so its a JSON object 
+
+When receiving data from a web server, the data is always a string. Parse the data with JSON.parse() , and the data becomes a object.
+
+```ruby
+unparsed_json = open('http://websec.app:8080/dawn.com.json').read
+parsed_docs = JSON.parse(unparsed_json)
+parsed_docs
+```
+
+EXAMPLE 2 Use JSON.pretty_generate
+Good for a webview. Generate a JSON document from the Ruby data structure obj and return it. The returned document is a prettier form of the document returned by #unparse.
+
+```ruby
+parsed_json_pretty = JSON.pretty_generate(parsed_json)
+puts parsed_json_pretty
+```
+
+EXAMPLE 3 Read a xml file, convert to JSON then show it pretty
+
+```ruby
+unparsed_vercheck = open('http://websec.app:8080/vercheck_output1.xml')
+myXML_vercheck  = Crack::XML.parse(unparsed_vercheck)
+myJSON_vercheck = myXML_vercheck.to_json
+
+myJSON_vercheck_parsed = JSON.parse(myJSON_vercheck )
+puts myJSON_vercheck_parsed
+
+parsed_json_pretty = JSON.pretty_generate(myJSON_vercheck_parsed)
+puts parsed_json_pretty
 ```
 
 ## Rails MVP <a name="paragraph2"></a>
