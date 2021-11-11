@@ -637,7 +637,7 @@ do |num|
   num * 2
 end
 ```
-## Parsing <a name="subparai"></a>
+## Parsing <a name="subparaparsing"></a>
 
 EXAMPLE 1 Open a xml via http convert to JSON
 
@@ -662,7 +662,7 @@ parsed_docs = JSON.parse(unparsed_json)
 parsed_docs
 ```
 
-EXAMPLE 2 Use JSON.pretty_generate
+EXAMPLE 3 Use JSON.pretty_generate
 Good for a webview. Generate a JSON document from the Ruby data structure obj and return it. The returned document is a prettier form of the document returned by #unparse.
 
 ```ruby
@@ -670,7 +670,7 @@ parsed_json_pretty = JSON.pretty_generate(parsed_json)
 puts parsed_json_pretty
 ```
 
-EXAMPLE 3 Read a xml file, convert to JSON then show it pretty
+EXAMPLE 4 Read a xml file, convert to JSON then show it pretty
 
 ```ruby
 unparsed_vercheck = open('http://websec.app:8080/vercheck_output1.xml')
